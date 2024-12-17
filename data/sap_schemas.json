@@ -1,0 +1,186 @@
+{
+  "MARA": {
+    "table_name": "MARA",
+    "description": "Material Master Data",
+    "fields": [
+      {
+        "name": "MATNR",
+        "type": "CHAR",
+        "length": 18,
+        "decimals": 0,
+        "description": "Material Number"
+      },
+      {
+        "name": "MTART",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Material Type"
+      },
+      {
+        "name": "MBRSH",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "Industry Sector"
+      },
+      {
+        "name": "MEINS",
+        "type": "UNIT",
+        "length": 3,
+        "decimals": 0,
+        "description": "Base Unit of Measure"
+      }
+    ]
+  },
+  "KNA1": {
+    "table_name": "KNA1",
+    "description": "Customer Master Data",
+    "fields": [
+      {
+        "name": "KUNNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Customer Number"
+      },
+      {
+        "name": "LAND1",
+        "type": "CHAR",
+        "length": 3,
+        "decimals": 0,
+        "description": "Country Key"
+      },
+      {
+        "name": "NAME1",
+        "type": "CHAR",
+        "length": 35,
+        "decimals": 0,
+        "description": "Name 1"
+      },
+      {
+        "name": "ORT01",
+        "type": "CHAR",
+        "length": 35,
+        "decimals": 0,
+        "description": "City"
+      }
+    ]
+  },
+  "LFA1": {
+    "table_name": "LFA1",
+    "description": "Vendor Master Data",
+    "fields": [
+      {
+        "name": "LIFNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Vendor Number"
+      },
+      {
+        "name": "NAME1",
+        "type": "CHAR",
+        "length": 35,
+        "decimals": 0,
+        "description": "Name 1"
+      },
+      {
+        "name": "STRAS",
+        "type": "CHAR",
+        "length": 35,
+        "decimals": 0,
+        "description": "Street"
+      },
+      {
+        "name": "LAND1",
+        "type": "CHAR",
+        "length": 3,
+        "decimals": 0,
+        "description": "Country Key"
+      },
+      {
+        "name": "COMSIZE",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "Company Size"
+      },
+      {
+        "name": "DECREGPC",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "Declaration Regimen for PIS/COFINS"
+      }
+    ]
+  },
+  "EKPO": {
+    "table_name": "EKPO",
+    "description": "Purchasing Document Item",
+    "fields": [
+      {
+        "name": "EBELN",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Purchasing Document Number"
+      },
+      {
+        "name": "EBELP",
+        "type": "NUMC",
+        "length": 5,
+        "decimals": 0,
+        "description": "Item Number"
+      },
+      {
+        "name": "WERKS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Plant"
+      },
+      {
+        "name": "MENGE",
+        "type": "QUAN",
+        "length": 13,
+        "decimals": 3,
+        "description": "Purchase Order Quantity"
+      }
+    ]
+  },
+  "BSEG": {
+    "table_name": "BSEG",
+    "description": "Accounting Document Segment",
+    "fields": [
+      {
+        "name": "BUKRS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Company Code"
+      },
+      {
+        "name": "BELNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Accounting Document Number"
+      },
+      {
+        "name": "GJAHR",
+        "type": "NUMC",
+        "length": 4,
+        "decimals": 0,
+        "description": "Fiscal Year"
+      },
+      {
+        "name": "BUZEI",
+        "type": "NUMC",
+        "length": 3,
+        "decimals": 0,
+        "description": "Line Item"
+      }
+    ]
+  }
+}

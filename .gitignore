@@ -16,12 +16,30 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
+# Virtual Environment
+venv/
+ENV/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
 # Environment variables
 .env
 
+# Logs
+*.log
+
 # Docker
-data/ 
+.docker/
+
+# Output files
+data/*.json
+!data/sap_schemas.json
