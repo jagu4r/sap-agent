@@ -33,6 +33,152 @@
       }
     ]
   },
+  "MARC": {
+    "table_name": "MARC",
+    "description": "Plant Data for Material",
+    "fields": [
+      {
+        "name": "MANDT",
+        "type": "CLNT",
+        "length": 3,
+        "decimals": 0,
+        "description": "Client"
+      },
+      {
+        "name": "MATNR",
+        "type": "CHAR",
+        "length": 18,
+        "decimals": 0,
+        "description": "Material Number"
+      },
+      {
+        "name": "WERKS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Plant"
+      },
+      {
+        "name": "STEUC",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Control Code"
+      },
+      {
+        "name": "DISMM",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "MRP Type"
+      },
+      {
+        "name": "MAABC",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "ABC Indicator"
+      },
+      {
+        "name": "LGPRO",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Storage Location"
+      },
+      {
+        "name": "LGFSB",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Storage Location for Production Supply"
+      },
+      {
+        "name": "DISGR",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "MRP Group"
+      },
+      {
+        "name": "DISLS",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "Lot Size"
+      },
+      {
+        "name": "BWSCL",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "Source of Supply"
+      },
+      {
+        "name": "BWTTY",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "Valuation Category"
+      },
+      {
+        "name": "SERNP",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Serial Number Profile"
+      },
+      {
+        "name": "CUOBJ",
+        "type": "NUMC",
+        "length": 18,
+        "decimals": 0,
+        "description": "Internal Object Number"
+      },
+      {
+        "name": "VRVEZ",
+        "type": "DEC",
+        "length": 5,
+        "decimals": 2,
+        "description": "Shipping Setup Time"
+      },
+      {
+        "name": "VBAMG",
+        "type": "QUAN",
+        "length": 13,
+        "decimals": 3,
+        "description": "Base Quantity for Capacity Planning"
+      },
+      {
+        "name": "LOSGR",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Logistics Handling Group"
+      },
+      {
+        "name": "STRGR",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "Planning Strategy Group"
+      },
+      {
+        "name": "STLAN",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "BOM Usage"
+      },
+      {
+        "name": "AUSME",
+        "type": "CHAR",
+        "length": 3,
+        "decimals": 0,
+        "description": "Base Unit of Measure for Production"
+      }
+    ]
+  },
   "KNA1": {
     "table_name": "KNA1",
     "description": "Customer Master Data",
@@ -180,6 +326,169 @@
         "length": 3,
         "decimals": 0,
         "description": "Line Item"
+      }
+    ]
+  },
+  "BKPF": {
+    "table_name": "BKPF",
+    "description": "Accounting Document Header",
+    "fields": [
+      {
+        "name": "BUKRS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Company Code"
+      },
+      {
+        "name": "BELNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Document Number"
+      },
+      {
+        "name": "GJAHR",
+        "type": "NUMC",
+        "length": 4,
+        "decimals": 0,
+        "description": "Fiscal Year"
+      },
+      {
+        "name": "BLART",
+        "type": "CHAR",
+        "length": 2,
+        "decimals": 0,
+        "description": "Document Type"
+      }
+    ]
+  },
+  "MKPF": {
+    "table_name": "MKPF",
+    "description": "Material Document Header",
+    "fields": [
+      {
+        "name": "MBLNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Material Document"
+      },
+      {
+        "name": "MJAHR",
+        "type": "NUMC",
+        "length": 4,
+        "decimals": 0,
+        "description": "Material Document Year"
+      },
+      {
+        "name": "BUDAT",
+        "type": "DATS",
+        "length": 8,
+        "decimals": 0,
+        "description": "Posting Date"
+      }
+    ]
+  },
+  "MSEG": {
+    "table_name": "MSEG",
+    "description": "Material Document Segment",
+    "fields": [
+      {
+        "name": "MBLNR",
+        "type": "CHAR",
+        "length": 10,
+        "decimals": 0,
+        "description": "Material Document"
+      },
+      {
+        "name": "MJAHR",
+        "type": "NUMC",
+        "length": 4,
+        "decimals": 0,
+        "description": "Material Document Year"
+      },
+      {
+        "name": "ZEILE",
+        "type": "NUMC",
+        "length": 4,
+        "decimals": 0,
+        "description": "Item in Material Document"
+      },
+      {
+        "name": "MATNR",
+        "type": "CHAR",
+        "length": 18,
+        "decimals": 0,
+        "description": "Material Number"
+      },
+      {
+        "name": "WERKS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Plant"
+      },
+      {
+        "name": "LGORT",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Storage Location"
+      }
+    ]
+  },
+  "T000": {
+    "table_name": "T000",
+    "description": "Clients",
+    "fields": [
+      {
+        "name": "MANDT",
+        "type": "CLNT",
+        "length": 3,
+        "decimals": 0,
+        "description": "Client"
+      },
+      {
+        "name": "CCCATEGORY",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "Client Category"
+      },
+      {
+        "name": "CCNOCLIIND",
+        "type": "CHAR",
+        "length": 1,
+        "decimals": 0,
+        "description": "Non-Client-Specific Client"
+      }
+    ]
+  },
+  "T001": {
+    "table_name": "T001",
+    "description": "Company Codes",
+    "fields": [
+      {
+        "name": "BUKRS",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Company Code"
+      },
+      {
+        "name": "BUTXT",
+        "type": "CHAR",
+        "length": 25,
+        "decimals": 0,
+        "description": "Company Name"
+      },
+      {
+        "name": "LAND1",
+        "type": "CHAR",
+        "length": 3,
+        "decimals": 0,
+        "description": "Country Key"
       }
     ]
   }
