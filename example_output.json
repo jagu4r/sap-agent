@@ -1,0 +1,22 @@
+{
+  "MARA": {
+    "table_name": "MARA",
+    "description": "Tabla de datos maestros de material",
+    "fields": [
+      {
+        "name": "MATNR",
+        "type": "CHAR",
+        "length": 18,
+        "decimals": 0,
+        "description": "Número de material"
+      },
+      {
+        "name": "MTART",
+        "type": "CHAR",
+        "length": 4,
+        "decimals": 0,
+        "description": "Tipo de material"
+      }
+    ]
+  }
+} 

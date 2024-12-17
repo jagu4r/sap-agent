@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sap-schema-extractor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SAP_USER=${SAP_USER}
+      - SAP_PASSWORD=${SAP_PASSWORD}
+      - SAP_HOST=${SAP_HOST}
+    volumes:
+      - ./:/app
+    command: python sap_schema_extractor.py
